@@ -17,7 +17,7 @@ class CICDUnitTestTests: XCTestCase {
         sut = nil
     }
     func testTripBudgetWithHotelCost(){
-        let hotel = Hotel(name: "Shimla hotel", location: "Shimla", cost: 25000)
+        let hotel = Hotel(name: "Shimla hotel", location: "Shimla", cost: 10000)
         XCTAssertLessThan(hotel.getHotelCostPerNight(),sut!.getBudget(), "exceeds budget")
     }
     func testExample() throws {
